@@ -10,10 +10,7 @@ devServer:{
     contentBase:'./dist'
 },
 plugins:[
-    new htmlWebPlugin({
-        filename:'index.html',
-        template:'./src/index.html'
-    })
+    
 ],
 module:{
     rules:[
