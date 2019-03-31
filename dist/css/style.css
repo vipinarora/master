@@ -80,10 +80,139 @@ a{
 }
 .footer{
     display:flex;
-    background-color: #000
+    background-color:#f3f0f0;
 }
 .footer_copyright{
     flex: 1;
-    padding-left: 10%;
+    padding: 1% 0% 1% 9%;
     font-size: 14px;
 }
+
+
+/*form style start
+Login
+*/
+
+.login-container{
+    display: flex;
+    min-height: 250px;
+}
+.login-article{
+flex: 45%;
+padding-left: 20%;
+padding-top: 1%;
+}
+.login-form{
+flex: 55%
+}
+
+/*form style end*/
+/*home page start*/
+.home-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+
+    
+    left: 0%;
+    top: 0;
+    
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
+}
+.home-container:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+.cat_img{
+    flex: 35%;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+}
+.cat_info{
+    
+    flex: 65%;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    line-height: 55px;
+
+}
+/*
+.aa{
+    line-height:50px;
+}*/
+.cat_explore{
+    border-style: none;
+    background-color: #d00256e6;
+    padding: 8px;
+    color: #fff;
+    font-weight: bold;
+}
+/*home page end*/
+
+/*plp page start*/
+.plp-container{
+    display: flex;
+
+}
+.plp-cat{
+flex:20%;
+}
+.plp-list{
+flex:80%
+}
+.plp-list-row{
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+}
+.plp-list-desc{
+    
+    width: 21%;
+    padding: 30px 0px;
+    
+
+}
+.plp-box{
+    border-bottom: dashed 1px #c1c1c185;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-left: 15px;
+}
+img {
+    width: 100%;
+}
+.plp-cat{
+    background-color: #f3f0f0;
+}
+.left-sidebar li{
+    border-bottom: solid #ddd6d64f;
+    padding: 10px;
+    margin-left: 8px;
+}
+.prod_info{
+    background-color: #f3f0f0;
+    min-height: 70px;
+}
+.price{
+   display: flex;
+   width:100%;
+}
+.price-info{
+flex: 1;
+align-self: center;
+}
+.buy-now{
+    flex: 1;
+    text-align: center;
+    border-style: none;
+    background-color: #d00256e6;
+    padding: 8px;
+    color: #fff;
+    font-weight: bold;
+}
+/*plp page end*/
