@@ -14,12 +14,13 @@
                 <div class="main_header__logo">
                         <img src="assets/images/logo.png" alt="logo" class="logo">
                 </div>
-                <nav class="main_header__menu">
-                <ul class="main-nav js--main-nav">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="product.html">Products</a></li>
-                </ul>
-            </nav>
+                <nav id="main_header__menu" class="main_header__menu">
+                    <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                    </ul>
+                 </nav>
                 <div class="main_header__right_menu">
                     <div class="right_menu_part">
                         <nav class="up-section">
@@ -29,10 +30,13 @@
                             </ul>
                         </nav>
                         <div class="down-section">
-                            <p>
-                            <img width="40px" alt="cart" src="assets/images/cart.svg" alt=""/>
-                            </p>
-                            <p class="cart_qty" id="cart_qty"><span id="qty" class="qty"> 0 </span><span id="items" class="items">items</span></p>
+                            <div class="cart_img">
+                                <img width="40px" alt="cart" src="assets/images/cart.svg" alt=""/>
+                            </div>
+                            <div id="m_menu" class="m_menu">
+                                <img width="40px" alt="cart" src="assets/images/m_menu.svg" alt=""/>
+                            </div>
+                            <div class="cart_qty" id="cart_qty"><span id="qty" class="qty"> 0 </span><span id="items" class="items">items</span></div>
                         </div>
                     </div>
                 </div>
@@ -45,7 +49,7 @@
                 <nav class="left-sidebar">
                     <ul>
                         <li>Fruits & Vegetables</li>
-                        <li>Bakery Cakes and Dairy</li>
+                        <li  class="active">Bakery Cakes and Dairy<i id="active-left-menu" class="arrow down"></i></li>
                         <li>Beverages</li>
                         <li>Beuaty and Hygiene</li>
                         <li>Baby Care</li>
@@ -136,6 +140,17 @@
         </div>
     </footer>
     <script type="text/javascript" src="js/bundle.js"></script>
+    <script>
+        var showMenu=document.getElementById('m_menu');
+        var hideMenu=document.getElementById('closebtn');
+        showMenu.addEventListener('click',function(){
+            document.getElementById("main_header__menu").style.width = "50%";
+        });
+        hideMenu.addEventListener('click',function(){
+            document.getElementById("main_header__menu").style.width = "0";
+        });
 
+        
+    </script>
 </body>
 </html>
